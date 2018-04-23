@@ -10,11 +10,30 @@ document.addEventListener("DOMContentLoaded", function(){
 // ============================================ //
 
 // ============[PAINTING/CANVAS FUNCTIONALITY]========= //
-let paint = function(){
+// -----Click & Paint Pixels
+let clickPaint = function(){
   event.target.classList.remove(...classList)
   event.target.classList.add(currentColor)
 }
-canvas.addEventListener("click", paint)
+canvas.addEventListener("click", clickPaint)
+// -----Drag & Paint Functionality
+let isPainting = false
+let setTrue = function(){
+  isPainting = true
+}
+let setFalse = function(){
+  isPainting = false
+}
+let dragPaint = function(){
+  if (isPainting === true){
+    event.target.classList.remove(...classList)
+    event.target.classList.add(currentColor)
+  }
+}
+
+canvas.addEventListener("mousedown", setTrue)
+canvas.addEventListener("mouseover", dragPaint)
+canvas.addEventListener("mouseup", setFalse)
 // ============================================= //
 
 // ==============[COLOR SELECTION]=============== //
@@ -49,8 +68,8 @@ for (let i = 0; i < paletteCollection.length; i++){
 // ==================================================== //
 
 // =================[RESET BUTTON]================ //
-let pixels = document.getElementsByClassName("item")
 let resetButton = document.getElementsByClassName("reset")[0]
+let pixels = document.getElementsByClassName("item")
 let resetCanvas = function(){
   for (let i = 0; i < pixels.length; i++){
     pixels[i].classList.remove(...classList)
