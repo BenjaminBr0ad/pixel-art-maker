@@ -1,3 +1,11 @@
+/* -------- BODY -------- */
+body {
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* ---------------------- */
+
 /* --------- NAME ------------ */
 .name{
   font-family: 'Gugi', cursive;
@@ -54,15 +62,20 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 1vh;
+  background-color: #b1adad87;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .picker{
   display: grid;
   border: 1px solid black;
   border-radius: 55%;
-  width: 82%;
+  width: 85%;
   height: 100%;
-  border-radius: px;
+  background-color: #b1adad87;
+  border-radius: 10px;
 }
 /* ------- END PALETTE ------- */
 
