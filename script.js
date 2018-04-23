@@ -11,6 +11,18 @@ document.addEventListener("DOMContentLoaded", function(){
 
 // ============[PAINTING/CANVAS FUNCTIONALITY]========= //
 let paint = function(){
+  event.target.classList.remove("red")
+  event.target.classList.remove("blue")
+  event.target.classList.remove("yellow")
+  event.target.classList.remove("green")
+  event.target.classList.remove("purple")
+  event.target.classList.remove("orange")
+  event.target.classList.remove("lite-blue")
+  event.target.classList.remove("pink")
+  event.target.classList.remove("pastel-green")
+  event.target.classList.remove("pastel-yellow")
+  event.target.classList.remove("lite-purple")
+  event.target.classList.remove("lite-orange")
   event.target.classList.add(currentColor)
 }
 canvas.addEventListener("click", paint)
@@ -32,6 +44,18 @@ for (let i = 0; i < paletteCollection.length; i++){
 let currentPanel = document.getElementsByClassName("current")[0]
 let currentColorUpdate = function(){
   let color = event.target.classList[0]
+  currentPanel.classList.remove("red")
+  currentPanel.classList.remove("blue")
+  currentPanel.classList.remove("yellow")
+  currentPanel.classList.remove("green")
+  currentPanel.classList.remove("purple")
+  currentPanel.classList.remove("orange")
+  currentPanel.classList.remove("lite-blue")
+  currentPanel.classList.remove("pink")
+  currentPanel.classList.remove("pastel-green")
+  currentPanel.classList.remove("pastel-yellow")
+  currentPanel.classList.remove("lite-purple")
+  currentPanel.classList.remove("lite-orange")
   currentPanel.classList.add(color)
 }
 
