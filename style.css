@@ -48,7 +48,7 @@
 .palette {
   display: grid;
   grid-template-rows: 1;
-  grid-template-columns: repeat(12,1fr);
+  grid-template-columns: repeat(14,1fr);
   width: 85vh;
   height: 5vh;
   margin-left: auto;
@@ -112,6 +112,10 @@
 /* -------- COLORS -------- */
 .white {
   background: white;
+}
+
+.black {
+  background: black;
 }
 
 .red {

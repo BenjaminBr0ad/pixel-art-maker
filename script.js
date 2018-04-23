@@ -31,11 +31,16 @@ for (let i = 0; i < paletteCollection.length; i++){
 
 // ===============[CURRENT COLOR INDICATOR]============= //
 let currentPanel = document.getElementsByClassName("current")[0]
-let classList = ["red","blue","yellow","green","purple","orange","lite-blue","pink","pastel-green","pastel-yellow","lite-purple","lite-orange"]
+let classList = ["red","blue","yellow","green","purple","orange","lite-blue","pink","pastel-green","pastel-yellow","lite-purple","lite-orange","white","black"]
 let currentColorUpdate = function(){
   let color = event.target.classList[0]
   currentPanel.classList.remove(...classList)
   currentPanel.classList.add(color)
+  if (currentPanel.classList.contains("black")){
+    currentPanel.style.color="white"
+  } else {
+    currentPanel.style.color="black"
+  }
 }
 
 for (let i = 0; i < paletteCollection.length; i++){
