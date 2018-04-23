@@ -1,0 +1,165 @@
+/* --------- NAME ------------ */
+.name{
+  font-family: 'Gugi', cursive;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  text-align: center;
+  height: 5vh;
+}
+/* --------------------------- */
+
+/* --------- CANVAS --------- */
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid black;
+  border-radius: 25px;
+  width: 80vh;
+  height: 80vh;
+  background-color: black;
+}
+
+.canvas {
+  display: grid;
+  grid-template-rows: repeat(50,1fr);
+  grid-template-columns: repeat(50,1fr);
+  width: 75vh;
+  height: 75vh;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.item{
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+/* --------- END CANVAS --------- */
+
+
+
+
+/* -------- PALETTE --------- */
+.palette {
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: repeat(12,1fr);
+  width: 85vh;
+  height: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vh;
+}
+
+.picker{
+  display: grid;
+  border: 1px solid black;
+  border-radius: 45%;
+  width: 90%;
+  height: 100%;
+  border-radius: px;
+}
+/* ------- END PALETTE ------- */
+
+
+
+/* ------- SETTINGS PANEL ------ */
+.settings{
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: repeat(2,2fr);
+  width: 50vh;
+  height: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vh;
+  justify-items: center;
+}
+
+.current{
+  border-bottom: 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+  align-self: center;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: 'Gugi', cursive;
+}
+
+.reset{
+  border-bottom: 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+  align-self: center;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: 'Gugi', cursive;
+}
+/* ----- END SETTINGS PANEL ---- */
+
+
+
+
+/* -------- COLORS -------- */
+.white {
+  background: white;
+}
+
+.red {
+  background: red;
+}
+
+.blue {
+  background: blue;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.green {
+  background: green;
+}
+
+.purple {
+  background: purple;
+}
+
+.orange {
+  background: orange;
+}
+
+.lite-blue {
+  background: #53E3F3;
+}
+
+.pink {
+  background: #ED95FE;
+}
+
+.pastel-green {
+  background: #95FEA7;
+}
+
+.pastel-yellow {
+  background: #F4FE66;
+}
+
+.lite-purple {
+  background: #AE7CE8;
+}
+
+.lite-orange {
+  background: #FDAD44;
+}
+
+/* ------- END COLORS ------- */
